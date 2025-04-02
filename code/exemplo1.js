@@ -1,3 +1,4 @@
+//Verifica se 2 numeros são iguais com tratamento de erro
 let n1 = parseFloat(prompt("Digite o primeiro número: "));
 let n2 = parseFloat(prompt("Digite o segundo numero"));
 if (isNaN(n1)) {
