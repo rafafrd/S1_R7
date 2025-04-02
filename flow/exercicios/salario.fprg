@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="salario"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 03:40:48 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTAyOyIxMjo0NDowMiAiOzI2NTc="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTAyOyIwMzo0MDo0OCAiOzI7Mjc3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salarioBase, genero, tempoEmpresa, aumento, salarioFinal" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual seu g&#234;nero?   (Mulher =&gt; 1 | Homem =&gt; 2) &quot;" newline="True"/>
+            <input variable="genero"/>
+            <output expression="&quot;Quanto tempo de empresa voc&#234; tem? (Anos) &quot;" newline="True"/>
+            <input variable="tempoEmpresa"/>
+            <output expression="&quot;Qual o seu sal&#225;rio atual?&quot;" newline="True"/>
+            <input variable="salarioBase"/>
+            <if expression="genero == 1">
+                <then>
+                    <comment text="Mulher"/>
+                    <if expression="tempoEmpresa &lt; 5">
+                        <then>
+                            <assign variable="aumento" expression="salarioBase * 0.04"/>
+                            <assign variable="salarioFinal" expression="salarioBase + aumento"/>
+                        </then>
+                        <else>
+                            <if expression="tempoEmpresa &gt;= 5 &amp;&amp; tempoEmpresa &lt; 10">
+                                <then>
+                                    <assign variable="aumento" expression="salarioBase * 0.07"/>
+                                    <assign variable="salarioFinal" expression="salarioBase + aumento"/>
+                                </then>
+                                <else>
+                                    <if expression="tempoEmpresa &gt;= 15 &amp;&amp; tempoEmpresa &lt; 20">
+                                        <then>
+                                            <assign variable="aumento" expression="salarioBase * 0.12"/>
+                                            <assign variable="salarioFinal" expression="salarioBase + aumento"/>
+                                        </then>
+                                        <else>
+                                            <if expression="tempoEmpresa &gt; 20">
+                                                <then>
+                                                    <assign variable="aumento" expression="salarioBase * 0.23"/>
+                                                    <assign variable="salarioFinal" expression="salarioBase + aumento"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <comment text="Homem"/>
+                    <if expression="tempoEmpresa &lt; 5">
+                        <then>
+                            <assign variable="aumento" expression="salarioBase * 0.03"/>
+                            <assign variable="salarioFinal" expression="salarioBase + aumento"/>
+                        </then>
+                        <else>
+                            <if expression="tempoEmpresa &gt;= 5 &amp;&amp; tempoEmpresa &lt; 15">
+                                <then>
+                                    <assign variable="aumento" expression="salarioBase * 0.08"/>
+                                    <assign variable="salarioFinal" expression="salarioBase + aumento"/>
+                                </then>
+                                <else>
+                                    <if expression="tempoEmpresa &gt;= 20 &amp;&amp; tempoEmpresa &lt; 30">
+                                        <then>
+                                            <assign variable="aumento" expression="salarioBase * 0.14"/>
+                                            <assign variable="salarioFinal" expression="salarioBase + aumento"/>
+                                        </then>
+                                        <else>
+                                            <if expression="tempoEmpresa &gt; 30">
+                                                <then>
+                                                    <assign variable="aumento" expression="salarioBase * 0.25"/>
+                                                    <assign variable="salarioFinal" expression="salarioBase + aumento"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;Parabens pelos seus &quot; &amp;tempoEmpresa &amp;&quot; anos de empresa, voc&#234; receber&#225; um aumento de R$&quot; &amp;aumento &amp;&quot; , seu salario novo &#233; de R$&quot; &amp;salarioFinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

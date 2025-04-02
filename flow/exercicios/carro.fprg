@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="carro"/>
+        <attribute name="authors" value="DES-MH"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 04:10:52 "/>
+        <attribute name="created" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTAyOyIxMDo0OTozOSAiOzI2NzA="/>
+        <attribute name="edited" value="REVTLU1IO0RFU0tUT1AtM0g3UVI5TzsyMDI1LTA0LTAyOyIwNDoxMDo1MiAiOzM7Mjc2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dias, km, carroTipo, valorkm, valorDia, valorTotal" type="Real" array="False" size=""/>
+            <output expression="&quot;Qual foi o tipo de carro selecionado? (1 - Popular | 2 - Luxo)&quot;" newline="True"/>
+            <input variable="carroTipo"/>
+            <output expression="&quot;Quantos KMs foram percorridos?&quot;" newline="True"/>
+            <input variable="km"/>
+            <output expression="&quot;Por quantos dias o carro foi utilizado&quot;" newline="True"/>
+            <input variable="dias"/>
+            <if expression="carroTipo == 1">
+                <then>
+                    <if expression="km &gt; 100">
+                        <then>
+                            <assign variable="valorkm" expression="(km * 0.10)"/>
+                            <assign variable="valorDia" expression="(dias * 90)"/>
+                            <assign variable="valorTotal" expression="valorkm + valorDia"/>
+                        </then>
+                        <else>
+                            <assign variable="valorkm" expression="(km * 0.20)"/>
+                            <assign variable="valorDia" expression="(dias * 90)"/>
+                            <assign variable="valorTotal" expression="valorkm + valorDia"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="km &lt; 200">
+                        <then>
+                            <assign variable="valorkm" expression="(km * 0.20)"/>
+                            <assign variable="valorDia" expression="(dias * 150)"/>
+                            <assign variable="valorTotal" expression="valorkm + valorDia"/>
+                        </then>
+                        <else>
+                            <assign variable="valorkm" expression="(km * 0.30)"/>
+                            <assign variable="valorDia" expression="(dias * 150)"/>
+                            <assign variable="valorTotal" expression="valorkm + valorDia"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;O valor total a ser pago &#233; R$&quot; &amp;valorTotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
