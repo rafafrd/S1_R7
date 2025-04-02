@@ -4,7 +4,7 @@ let km = parseInt(prompt("Quantos KMs o carro percorreu:  "));
 if (isNaN(tipo && dias && km)) {
   alert("ERRO - Digite números para utilizar os programas");
 } else {
-  if (km < 100) {
+  if (km <= 100) {
     if (tipo == 1) {
       let valorkm = km * 0.2;
       let valordia = dias * 90;
