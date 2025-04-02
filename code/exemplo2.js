@@ -6,11 +6,15 @@ if (isNaN(lado1 && lado2 && lado3)) {
   //Verifica se o user atribuiu números
   alert("Você precisa digitar um número, tente novamente! 🔁");
 } else {
-  if (lado1 == lado2 && lado2 == lado3) {
-    alert("Triângulo equilatero");
-  } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3){
-    alert("Triângulo isósceles")
+  if (lado1 + lado2 >= lado3 && lado1 + lado3 >= lado2 && lado3 + lado2 >= lado1) {
+    if (lado1 == lado2 && lado2 == lado3) {
+      alert("Triângulo equilatero");
+    } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
+      alert("Triângulo isósceles");
+    } else {
+      alert("Triângulo Escaleno");
+    }
   } else {
-    alert("Triângulo Escaleno")
+    alert("O triangulo não fecha")
   }
 }
