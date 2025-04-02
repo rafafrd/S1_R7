@@ -10,8 +10,8 @@ if (!isNaN(n1)) {
   if (!isNaN(n2)) {
     if (n1 == n2) {
       alert("Os números são iguais!");
-    }else{
-      alert("Os números não são iguais!")
+    } else {
+      alert("Os números não são iguais!");
     }
   }
 }
