@@ -40,21 +40,9 @@ Programa que calcula o novo salário de funcionários com base em:
 - **Visual Studio Code**: Para desenvolvimento do código JavaScript
 - **Git e GitHub**: Para versionamento e hospedagem do projeto
 
-## 📂 Estrutura do Projeto
-```
-📁 S1_R7/
-├── 📁 exercicio1/
-│ ├── 📄 index.html # Página para executar o programa
-│ ├── 📄 script.js # Código JavaScript da solução
-│ └── 📄 fluxograma.fprg # Fluxograma do Flowgorithm
-│
-└── 📁 exercicio2/
-├── 📄 index.html # Página para executar o programa
-├── 📄 script.js # Código JavaScript da solução
-└── 📄 fluxograma.fprg # Fluxograma do Flowgorithm
-```
+---
 
 ## 🚀 Como Executar
 1. Clone o repositório
 2. Abra os arquivos `.js` no VS Code
-3. Execute com Node.js ou no navegador
+3. Execute com no navegador
