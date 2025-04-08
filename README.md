@@ -39,7 +39,6 @@ Programas em JavaScript para cálculo de aluguel de veículos e reajuste salaria
 
 ## 🛠️ Tecnologias
 - JavaScript
-- Node.js (para execução via terminal)
 - HTML (para versão web)
 
 ## 🚀 Como Executar
