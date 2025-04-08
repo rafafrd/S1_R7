@@ -1,48 +1,48 @@
-# 📝 Calculadora de Aluguel de Carros e Reajuste Salarial
+# 🚗💼 Calculadora de Aluguel de Carros e Reajuste Salarial
 
-## 🚗 Tarefa 1: Cálculo de Aluguel de Carros
-**Descrição:**  
-Programa que calcula o valor total a ser pago pelo aluguel de um carro com base em:
-- Tipo de carro (popular ou luxo)
+Programas em JavaScript para cálculo de aluguel de veículos e reajuste salarial conforme critérios específicos.
+
+## 📋 Tarefas
+
+### 1. Calculadora de Aluguel de Carros
+**Objetivo**: Calcular o valor total do aluguel de um carro baseado em:
+- Tipo de veículo (popular ou luxo)
 - Dias de aluguel
-- Quilômetros percorridos
+- Quilômetros rodados
 
-**Tabela de Preços:**
-| Tipo de Carro  | Diária  | KM ≤ Limite | KM > Limite |
-|----------------|---------|-------------|-------------|
-| Popular        | R$ 90   | R$ 0,20/km  | R$ 0,10/km  |
-| Luxo           | R$ 150  | R$ 0,30/km  | R$ 0,25/km  |
+**Tabela de Preços**:
+| Categoria | Diária  | Até Limite | Acima do Limite |
+|-----------|---------|------------|-----------------|
+| Popular   | R$ 90   | R$0,20/km  | R$0,10/km       |
+| Luxo      | R$ 150  | R$0,30/km  | R$0,25/km       |
 
 *Limites: Popular = 100km, Luxo = 200km*
 
-## 💼 Tarefa 2: Reajuste Salarial
-**Descrição:**  
-Programa que calcula o novo salário de funcionários com base em:
+### 2. Calculadora de Reajuste Salarial
+**Objetivo**: Calcular novo salário considerando:
 - Salário atual
-- Gênero (Masculino/Feminino)
-- Tempo de serviço na empresa
+- Gênero (M/F)
+- Tempo de serviço
 
-**Tabela de Reajuste:**
-### Mulheres
+**Regras de Reajuste**:
+#### Mulheres
 - < 5 anos: +4%
 - 5-10 anos: +7%
 - 15-20 anos: +12%
 - > 20 anos: +23%
 
-### Homens
+#### Homens
 - < 5 anos: +3%
 - 5-15 anos: +8%
 - 20-30 anos: +14%
 - > 30 anos: +25%
 
-## 🛠️ Ferramentas Utilizadas
-- **Flowgorithm**: Para criação dos fluxogramas
-- **Visual Studio Code**: Para desenvolvimento do código JavaScript
-- **Git e GitHub**: Para versionamento e hospedagem do projeto
-
----
+## 🛠️ Tecnologias
+- JavaScript
+- Node.js (para execução via terminal)
+- HTML (para versão web)
 
 ## 🚀 Como Executar
-1. Clone o repositório
-2. Abra os arquivos `.js` no VS Code
-3. Execute com no navegador
+### Versão Web:
+1. Abra o arquivo `index.html` no navegador
+2. Interaja com a interface gráfica
