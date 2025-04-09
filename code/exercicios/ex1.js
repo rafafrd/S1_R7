@@ -2,7 +2,7 @@ let tipo = parseInt(prompt("Qual tipo de carro foi utilizado (Popular => 1 | Lux
 let dias = parseInt(prompt("Quantos dias o carro foi utilizado: "));
 let km = parseInt(prompt("Quantos KMs o carro percorreu:  "));
 if (isNaN(tipo && dias && km)) {
-  //Verificação de erro
+  //Valida se o user digitou somente numeros
   alert("ERRO - Digite números para utilizar os programas");
 } else {
   if (tipo == 1) {
